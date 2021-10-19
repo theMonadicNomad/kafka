@@ -15,7 +15,7 @@ async function run()
     await consumer.connect()
     console.log("Connected")
     consumer.subscribe({
-        "topic" : "Users",
+        "topic" : "Usernames",
         "fromBeginning": true
     })
 
@@ -25,7 +25,7 @@ async function run()
         }
     })
     console.log()
-    await producer.disconnect();
+
 
     }
     catch(ex)

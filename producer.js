@@ -17,7 +17,7 @@ async function run()
     console.log("Connected")
     const partition = msg[0] < "N" ? 0 : 1;
     const result = await producer.send({
-        "topic": "Users",
+        "topic": "Usernames",
         "messages":[{ 
             "value": msg,
             "partition": partition

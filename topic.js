@@ -16,7 +16,7 @@ async function run()
     console.log("Connected")
     await admin.createTopics({
         "topics":[{ 
-            "topic" : "Users",
+            "topic" : "Usernames",
             "numPartitions": 2
 
         }]
